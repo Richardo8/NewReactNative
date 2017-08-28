@@ -11,23 +11,24 @@ import {
   Text,
   View
 } from 'react-native';
+import { Button } from 'antd-mobile'
+import Test from "./src/components/common/Test";
+// import NewDrawer from "./src/components/common/Drawer";
+// import NewDrawer from "./src/components/common/Drawer";
 
 export default class NewReactNative extends Component {
   render() {
     return (
-      <View style={styles.container}>
-        <Text style={styles.welcome}>
-          Welcome to React Native!
-        </Text>
-        <Text style={styles.instructions}>
-          To get started, edit index.ios.js
-        </Text>
-        <Text style={styles.instructions}>
-          Press Cmd+R to reload,{'\n'}
-          Cmd+D or shake for dev menu
-        </Text>
-      </View>
+        <View style={styles.container}>
+          <Text>
+            Hello World!
+          </Text>
+          <Button>Hello</Button>
+          <Test/>
+        </View>
+
     );
+
   }
 }
 
