@@ -11,20 +11,17 @@ import {
   Text,
   View
 } from 'react-native';
-import { Button } from 'antd-mobile'
 import Test from "./src/components/common/Test";
-// import NewDrawer from "./src/components/common/Drawer";
-// import NewDrawer from "./src/components/common/Drawer";
+import IndexHeader from "./src/components/Index/IndexHeader";
 
 export default class NewReactNative extends Component {
   render() {
     return (
-        <View style={styles.container}>
-          <Text>
-            Hello World!
-          </Text>
-          <Button>Hello</Button>
-          <Test/>
+        <View style={{flex: 1}}>
+          <IndexHeader/>
+          <View style={{flex: 1, backgroundColor: 'powderblue'}} />
+          <View style={{flex: 2, backgroundColor: 'skyblue'}} />
+          <View style={{flex: 3, backgroundColor: 'steelblue'}} />
         </View>
 
     );
