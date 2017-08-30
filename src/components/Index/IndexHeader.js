@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
-import { View, Text, ImageBackground } from 'react-native'
-import Svg, { Path, Circle, Rect, Image } from 'react-native-svg'
+import { View, Text, ImageBackground, Image } from 'react-native'
+import Svg, { Path, Circle, Rect } from 'react-native-svg'
 
 class IndexHeader extends Component {
     render(){
@@ -12,8 +12,9 @@ class IndexHeader extends Component {
                     </Svg>
                     <Text style={{ flex: 5, color: '#fff'}}>朝阳区恒通国际创新园C9</Text>
                 </View>
-                <View style={{ flex: 1, backgroundColor: 'red' }}>
-                    <Image source={{uri: "https://fuss10.elemecdn.com/3/73/19e992e612e983f517e2690cb3e16png.png?imageMogr/format/webp/thumbnail/!69x69r/gravity/Center/crop/69x69/"}} />
+                <View style={{ flex: 1, backgroundColor: 'black' }}>
+                    <Image source={{uri: "https://fuss10.elemecdn.com/3/73/19e992e612e983f517e2690cb3e16png.png"}}
+                           style={{  width: 50, height: 50}}/>
                 </View>
 
             </View>
