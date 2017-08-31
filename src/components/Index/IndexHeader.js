@@ -29,7 +29,7 @@ class IndexHeader extends Component {
                     </View>
                 </View>
                 <View style={{ backgroundColor: '#0085ff', padding: 15 }}>
-                    <View style={{ flexDirection: 'row', backgroundColor: '#fff', width: '100%', height: 30, borderRadius: 1}}>
+                    <View style={{ flexDirection: 'row', alignItems: 'center',justifyContent: 'center', backgroundColor: '#fff',  width: '100%', height: 25, borderRadius: 1}}>
                         <Svg viewBox="0 0 14 14"  width="14" height="14">
                             <G fill="#999" fill-rule="evenodd">
                                 <Path fill-rule="nonzero" d="M5.5 9.5a4 4 0 1 0 0-8 4 4 0 0 0 0 8zm0 1.5a5.5 5.5 0 1 1 0-11 5.5 5.5 0 0 1 0 11z">
