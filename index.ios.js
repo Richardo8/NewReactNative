@@ -19,15 +19,31 @@ import IndexHeader from "./src/components/Index/IndexHeader";
 export default class NewReactNative extends Component {
   render() {
     return (
-        <View style={{flex: 1, backgroundColor: 'black'}}>
+        <View >
           <IndexHeader/>
           <View style={{flex: 1, backgroundColor: 'powderblue'}} >
           <Image source={{uri: "https://fuss10.elemecdn.com/3/73/19e992e612e983f517e2690cb3e16png.png"}}
                  style={{  width: 50, height: 50}}/>
 
           </View>
-          <View style={{flex: 2, backgroundColor: 'skyblue'}} />
-          <View style={{flex: 3, backgroundColor: 'steelblue'}} />
+            <View style={{flex: 2, backgroundColor: 'skyblue'}} >
+
+            </View>
+            {/*<Text style={{ transform: [{translateY: -100}]}}>*/}
+                {/*Y: -100*/}
+            {/*</Text>*/}
+            {/*<Text style={{ transform: [{translateY: 100}]}}>*/}
+                {/*Y: 100*/}
+            {/*</Text>*/}
+            {/*<Text style={{ transform: [{translateX: -100}]}}>*/}
+                {/*X: -100*/}
+            {/*</Text>*/}
+            {/*<Text style={{ transform: [{translateX: 90}]}}>*/}
+                {/*X: 90*/}
+            {/*</Text>*/}
+            {/*<Text style={{ transform: [{translateX: 100}]}}>*/}
+                {/*X: 100*/}
+            {/*</Text>*/}
         </View>
 
     );

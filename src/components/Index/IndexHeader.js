@@ -28,22 +28,39 @@ class IndexHeader extends Component {
                                style={{  width: 30, height: 30}}/>
                     </View>
                 </View>
-                <View style={{ backgroundColor: '#0085ff', padding: 15 }}>
-                    <View style={{ flexDirection: 'row', alignItems: 'center',justifyContent: 'center', backgroundColor: '#fff',  width: '100%', height: 25, borderRadius: 1}}>
+                <View style={{ backgroundColor: '#0085ff', padding: 10 }}>
+                    <View style={{ flexDirection: 'row', alignItems: 'center',justifyContent: 'center', backgroundColor: '#fff',  width: '100%', height: 25, borderRadius: 2}}>
                         <Svg viewBox="0 0 14 14"  width="14" height="14">
                             <G fill="#999" fill-rule="evenodd">
                                 <Path fill-rule="nonzero" d="M5.5 9.5a4 4 0 1 0 0-8 4 4 0 0 0 0 8zm0 1.5a5.5 5.5 0 1 1 0-11 5.5 5.5 0 0 1 0 11z">
                                 </Path>
-                                <Rect width="1.5" height="6" x="9.904" y="7.859" rx=".5" transform="rotate(-45 10.654 10.859)">
+                                <Rect width="1.5" height="6" x="9.904" y="7.859" rx=".5" style={{transform: [{ translate: [100, 100] }]}}>
                                 </Rect>
                             </G>
                         </Svg>
                         <View>
                             <Text style={{ color: '#666' }}>搜索商家、商品名称</Text>
                         </View>
+
                     </View>
                 </View>
-
+                <View style={{flex: 3, backgroundColor: 'steelblue'}} />
+                <View>
+                    <View style={{ height: 200, backgroundColor: 'white', flexDirection: 'row' }}>
+                        {/*<Text style={{ transform: [{ translate: [100, 100] }] }}>*/}
+                            {/*translate*/}
+                        {/*</Text>*/}
+                        <Svg viewBox="0 0 14 14"  width="14" height="14">
+                            <G>
+                                <Rect width="1.5" height="6" x="9.904" y="7.859" rx=".5"  style={{transform: [{rotate: '90rad'}]}}>
+                                </Rect>
+                            </G>
+                        </Svg>
+                        {/*<Text style={{ transform: [{rotate: '45rad'}] }}>*/}
+                            {/*test*/}
+                        {/*</Text>*/}
+                    </View>
+                </View>
             </View>
 
 
