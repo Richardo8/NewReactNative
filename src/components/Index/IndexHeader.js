@@ -34,7 +34,7 @@ class IndexHeader extends Component {
                             <G fill="#999" fill-rule="evenodd">
                                 <Path fill-rule="nonzero" d="M5.5 9.5a4 4 0 1 0 0-8 4 4 0 0 0 0 8zm0 1.5a5.5 5.5 0 1 1 0-11 5.5 5.5 0 0 1 0 11z">
                                 </Path>
-                                <Rect width="1.5" height="6" x="1.904" y="10.859" rx=".5" rotate="-45">
+                                <Rect width="1.5" height="6" x="0.904" y="12.859" rx=".5" rotate="-45">
                                 </Rect>
                             </G>
                         </Svg>
