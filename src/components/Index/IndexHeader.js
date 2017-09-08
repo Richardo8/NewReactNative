@@ -7,7 +7,7 @@ class IndexHeader extends Component {
     render(){
         return (
             <View style={{ flex: 1 }}>
-                <View style={{ flex: 1, flexDirection: 'row', backgroundColor: '#0085ff', paddingTop: 20}}>
+                <View style={{ flexDirection: 'row', backgroundColor: '#0085ff', paddingTop: 20}}>
                     <View style={{ flex: 5, flexDirection: 'row' }}>
 
                         <Svg width="13" height="15" viewBox="0 0 26 31">
@@ -43,6 +43,32 @@ class IndexHeader extends Component {
                         </View>
 
                     </View>
+                </View>
+                <View style={{ backgroundColor: '#0085ff', padding: 10, flexDirection: 'row' }}>
+                    <Text style={{ marginRight: ScreenUtil.scaleSize(50), color: '#fff', fontSize: ScreenUtil.setSpText(6) }}>
+                        炸鸡
+                    </Text>
+                    <Text style={{ marginRight: ScreenUtil.scaleSize(50), color: '#fff', fontSize: ScreenUtil.setSpText(6) }}>
+                        炸鸡
+                    </Text>
+                    <Text style={{ marginRight: ScreenUtil.scaleSize(50), color: '#fff', fontSize: ScreenUtil.setSpText(6) }}>
+                        炸鸡
+                    </Text>
+                    <Text style={{ marginRight: ScreenUtil.scaleSize(50), color: '#fff', fontSize: ScreenUtil.setSpText(6) }}>
+                        炸鸡
+                    </Text>
+                    <Text style={{ marginRight: ScreenUtil.scaleSize(50), color: '#fff', fontSize: ScreenUtil.setSpText(6) }}>
+                        炸鸡
+                    </Text>
+                    <Text style={{ marginRight: ScreenUtil.scaleSize(50), color: '#fff', fontSize: ScreenUtil.setSpText(6) }}>
+                        炸鸡
+                    </Text>
+                    <Text style={{ marginRight: ScreenUtil.scaleSize(50), color: '#fff', fontSize: ScreenUtil.setSpText(6) }}>
+                        炸鸡
+                    </Text>
+                    <Text style={{ marginRight: ScreenUtil.scaleSize(50), color: '#fff', fontSize: ScreenUtil.setSpText(6) }}>
+                        炸鸡
+                    </Text>
                 </View>
             </View>
 
