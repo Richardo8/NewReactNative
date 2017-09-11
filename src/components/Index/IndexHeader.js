@@ -4,9 +4,34 @@ import Svg, { Path, Circle, Rect, Defs, ClipPath, G } from 'react-native-svg'
 import * as ScreenUtil from '../common/Adaptation'
 
 class IndexHeader extends Component {
+    constructor(props){
+        super(props);
+        this.state = {
+            data: []
+        }
+    }
+
+    componentWillMount(){
+        this.getData()
+    }
+
+    async getData(){
+        let data = await fetch('https://restapi.ele.me/shopping/v2/entries?latitude=39.99054&longitude=116.49442&templates[]=main_template')
+        let dataJson = await data.json()
+        this.setState({
+            data: dataJson[0].entries
+        })
+    }
+
     render(){
+        const data = this.state.data;
+        const entries = data.map((entry) =>
+            <Text style={{ color: '#fff' }} key={entry.id}>
+                {entry.name}
+            </Text>
+        )
         return (
-            <View style={{ flex: 1 }}>
+            <View style={{}}>
                 <View style={{ flexDirection: 'row', backgroundColor: '#0085ff', paddingTop: 20}}>
                     <View style={{ flex: 5, flexDirection: 'row' }}>
 
@@ -69,6 +94,9 @@ class IndexHeader extends Component {
                     <Text style={{ marginRight: ScreenUtil.scaleSize(50), color: '#fff', fontSize: ScreenUtil.setSpText(6) }}>
                         炸鸡
                     </Text>
+                </View>
+                <View>
+                    {entries}
                 </View>
             </View>
 

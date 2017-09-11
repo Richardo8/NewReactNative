@@ -21,7 +21,7 @@ export default class NewReactNative extends Component {
     return (
         <View style={{ flex: 1, backgroundColor: 'black'}}>
             <IndexHeader/>
-            <View style={{flex: 1, backgroundColor: 'powderblue'}} >
+            <View style={{ backgroundColor: 'powderblue'}} >
                 <Image source={{uri: "https://fuss10.elemecdn.com/3/73/19e992e612e983f517e2690cb3e16png.png"}}
                    style={{  width: 50, height: 50}}/>
 
