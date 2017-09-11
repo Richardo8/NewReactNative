@@ -26,9 +26,13 @@ class IndexHeader extends Component {
     render(){
         const data = this.state.data;
         const entries = data.map((entry) =>
-            <Text style={{ color: '#fff' }} key={entry.id}>
-                {entry.name}
-            </Text>
+            <View key={entry.id}>
+                <Image source={{uri: `https://fuss10.elemecdn.com/${entry.image_hash.substr(0, 1)}/${entry.image_hash.substr(1, 2)}/${entry.image_hash.substr(3)}.jpeg` }}
+                       style={{  width: 30, height: 30}}/>
+                <Text style={{ color: '#fff' }}>
+                    {entry.name}
+                </Text>
+            </View>
         )
         return (
             <View style={{}}>
