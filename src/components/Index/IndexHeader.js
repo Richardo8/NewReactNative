@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import { View, Text, ImageBackground, Image, StyleSheet } from 'react-native'
 import Svg, { Path, Circle, Rect, Defs, ClipPath, G } from 'react-native-svg'
+import Swiper from 'react-native-swiper'
 import * as ScreenUtil from '../common/Adaptation'
 
 class IndexHeader extends Component {
@@ -23,17 +24,20 @@ class IndexHeader extends Component {
         })
     }
 
-    render(){
-        const data = this.state.data;
-        const entries = data.map((entry) =>
-            <View key={entry.id}>
-                <Image source={{uri: `https://fuss10.elemecdn.com/${entry.image_hash.substr(0, 1)}/${entry.image_hash.substr(1, 2)}/${entry.image_hash.substr(3)}.jpeg` }}
+    returnEntries = (datas) => (
+        datas.map((data) => (
+            <View key={data.id} style={{ marginLeft: ScreenUtil.scaleSize(55), justifyContent: "center", alignItems: 'center', width: 60, height: 60}}>
+                <Image source={{uri: `https://fuss10.elemecdn.com/${data.image_hash.substr(0, 1)}/${data.image_hash.substr(1, 2)}/${data.image_hash.substr(3)}.jpeg`}}
                        style={{  width: 30, height: 30}}/>
-                <Text style={{ color: '#fff' }}>
-                    {entry.name}
+                <Text style={{ color: '#666666' }}>
+                    {data.name}
                 </Text>
             </View>
-        )
+        ))
+    )
+
+    render(){
+        const data = this.state.data;
         return (
             <View style={{}}>
                 <View style={{ flexDirection: 'row', backgroundColor: '#0085ff', paddingTop: 20}}>
@@ -99,12 +103,17 @@ class IndexHeader extends Component {
                         炸鸡
                     </Text>
                 </View>
-                <View>
-                    {entries}
+                <View style={{ flexDirection: 'row', backgroundColor: '#fff', width: '100%' }}>
+                    <Swiper height={ScreenUtil.scaleSize(250)} paginationStyle={{ bottom: 5 }}>
+                        <View style={{ flexDirection: 'row', width: '100%', flexWrap: 'wrap' }}>
+                            { this.returnEntries(data.slice(0, 8))}
+                        </View>
+                        <View style={{ flexDirection: 'row', width: '100%', flexWrap: 'wrap' }}>
+                            { this.returnEntries(data.slice(8))}
+                        </View>
+                    </Swiper>
                 </View>
             </View>
-
-
         )
     }
 }
